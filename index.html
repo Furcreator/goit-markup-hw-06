@@ -323,7 +323,7 @@
         </address>
       </div>
       <div class="part-cellar">
-        <h2>приєднуйтесь</h2>
+        <h2 class="cellar-title">приєднуйтесь</h2>
         <ul class="cellar-icon">
           <li class="cellar-icon-list">
             <a class=" part-cellar-link" href="#"><svg class="part-cellar-item">
@@ -347,6 +347,21 @@
           </li>
         </ul>
       </div>
+      <div class="footer-form">
+        <h2 class='form-title'>Підпишіться на розсилку</h2>
+        <form>
+          <label for="#">
+            <input name="mail" class="footer-form-input" type="email" placeholder="E-mail">
+          </label>
+          <button class="form-buttom" type="submit">
+            <div class="f-b-text-icon">
+              <span class="form-button-text">Підписатися</span> <svg class="footer-form-icon">
+                <use href="./images/ikons.svg#icon-send"></use>
+              </svg>
+            </div>
+          </button>
+        </form>
+      </div>
     </div>
   </footer>
   <div class="modal-backdrop is-hidden" data-modal>
@@ -354,6 +369,19 @@
       <button class='mod-but' type="button" data-modal-close> <svg class="mod-but-icon">
           <use href="./images/ikons.svg#icon-close"></use>
         </svg> </button>
+      <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+      <form class="modal-form">
+        <label> <span>Ім'я</span>
+          <input name="Name" type="text">
+        </label>
+        <label>
+          <input name='Tel' type="tel">
+        </label>
+        <label>
+          <input name="Mail" type="email">
+        </label>
+        <label></label>
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
