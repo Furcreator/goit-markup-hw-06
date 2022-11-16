@@ -640,7 +640,8 @@ main {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-buttom {
+.form-button,
+.modal-button {
   height: 50px;
   width: 200px;
   padding: 10px 28px;
@@ -652,7 +653,8 @@ main {
   cursor: pointer;
 }
 
-.form-button-text {
+.form-button-text,
+.modal-button-text {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -724,6 +726,12 @@ main {
 .mod-but-icon {
   width: 18px;
   height: 18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mod-but-icon:hover,
+.mod-but-icon:focus {
+  fill: var(--accent-color);
 }
 
 .is-hidden {
@@ -739,22 +747,53 @@ main {
 .modal-title {
   padding: 0 40px;
   padding-top: 40px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color)
+  color: var(--primary-text-color);
 }
 
 /* FORM-MODAL */
 
 .modal-form {
-  display: block;
   width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
+.m-f-input {
+  width: 100%;
+  margin-bottom: 10px;
+}
 
+.m-f-feedback {
+  width: 100%;
+  height: 120px;
+  resize: none;
+}
+
+.m-f-name {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.m-checkbox {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.checkbox-link {
+  text-decoration: underline;
+}
+
+.modal-form > .modal-button {
+  margin: 0 auto;
+  display: block;
+}
 
 /* PORTFOLIO HTML STUDIO */ /* PORTFOLIO HTML STUDIO */ /* PORTFOLIO HTML STUDIO */ /* PORTFOLIO HTML STUDIO */ /* PORTFOLIO HTML STUDIO */
 
