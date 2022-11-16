@@ -372,7 +372,9 @@
       <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
       <form class="modal-form">
         <label class="m-f-namelabel"><span class="m-f-name">Ім'я</span>
-          <input class="m-f-input" name="Name" type="text">
+          <input class="m-f-input" name="Name" type="text"> <svg class="m-f-icon">
+            <use href="./images/ikons.svg#icon-form-person"></use>
+          </svg>
         </label>
         <label class="m-f-namelabel"><span class="m-f-name">Телефон</span>
           <input class="m-f-input" name='Tel' type="tel">
@@ -381,11 +383,11 @@
           <input class="m-f-input" name="Mail" type="email">
         </label>
         <label class="m-f-namelabel"><span class="m-f-name">Коментар</span> 
-          <textarea class="m-f-feedback" name="" id=""></textarea>
+          <textarea class="m-f-feedback" name="feedback" placeholder="Введіть текст"></textarea>
         </label>
         <div class="m-checkbox">
           <label class="checkbox">
-            <input type="checkbox">
+            <input type="checkbox" name="acept" value="acept">
             <span class="checkbox-text">Погоджуюся з розсилкою та приймаю
               <a class="checkbox-link" href="#">Умови договору</a>
             </span>
