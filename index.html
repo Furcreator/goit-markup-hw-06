@@ -370,7 +370,7 @@
           <use href="./images/ikons.svg#icon-close"></use>
         </svg> </button>
       <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-      <form class="modal-form">
+      <form class="modal-form js-speaker-form">
         <div class="m-f-box">
           <label class="m-f-namelabel"><span class="m-f-name">Ім'я</span>
             <input class="m-f-input" name="Name" type="text">
@@ -398,14 +398,17 @@
         <label class="m-f-namelabel"><span class="m-f-name">Коментар</span>
           <textarea class="m-f-feedback" name="feedback" placeholder="Введіть текст"></textarea>
         </label>
-        <div class="m-checkbox">
           <label class="checkbox">
-            <input type="checkbox" name="acept" value="acept">
+            <input type="checkbox" class="ch-acept" name="acept" value="acept">
+            <span class="checkbox-wrapper">
+              <svg class="icon-check">
+                <use href="./images/ikons.svg#icon-check"></use>
+              </svg>
+            </span>
             <span class="checkbox-text">Погоджуюся з розсилкою та приймаю
               <a class="checkbox-link" href="#">Умови договору</a>
             </span>
           </label>
-        </div>
         <button class="modal-button" type="submit"><span class="modal-button-text">Відправити</span></button>
       </form>
     </div>
