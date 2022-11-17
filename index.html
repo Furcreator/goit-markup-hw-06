@@ -371,18 +371,31 @@
         </svg> </button>
       <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
       <form class="modal-form">
-        <label class="m-f-namelabel"><span class="m-f-name">Ім'я</span>
-          <input class="m-f-input" name="Name" type="text"> <svg class="m-f-icon">
-            <use href="./images/ikons.svg#icon-form-person"></use>
-          </svg>
-        </label>
-        <label class="m-f-namelabel"><span class="m-f-name">Телефон</span>
-          <input class="m-f-input" name='Tel' type="tel">
-        </label>
-        <label class="m-f-namelable"><span class="m-f-name">Пошта</span>
-          <input class="m-f-input" name="Mail" type="email">
-        </label>
-        <label class="m-f-namelabel"><span class="m-f-name">Коментар</span> 
+        <div class="m-f-box">
+          <label class="m-f-namelabel"><span class="m-f-name">Ім'я</span>
+            <input class="m-f-input" name="Name" type="text">
+            <svg class="m-f-icon">
+              <use href="./images/ikons.svg#icon-form-person"></use>
+            </svg>
+          </label>
+        </div>
+        <div class="m-f-box">
+          <label class="m-f-namelabel"><span class="m-f-name">Телефон</span>
+            <input class="m-f-input" name='Tel' type="tel">
+            <svg class="m-f-icon">
+              <use href="./images/ikons.svg#icon-form-phone"></use>
+            </svg>
+          </label>
+        </div>
+        <div class="m-f-box">
+          <label class="m-f-namelable"><span class="m-f-name">Пошта</span>
+            <input class="m-f-input" name="Mail" type="email">
+            <svg class="m-f-icon">
+              <use href="./images/ikons.svg#icon-form-mail"></use>
+            </svg>
+          </label>
+        </div>
+        <label class="m-f-namelabel"><span class="m-f-name">Коментар</span>
           <textarea class="m-f-feedback" name="feedback" placeholder="Введіть текст"></textarea>
         </label>
         <div class="m-checkbox">
@@ -393,7 +406,7 @@
             </span>
           </label>
         </div>
-          <button class="modal-button" type="submit"><span class="modal-button-text">Відправити</span></button>
+        <button class="modal-button" type="submit"><span class="modal-button-text">Відправити</span></button>
       </form>
     </div>
   </div>
